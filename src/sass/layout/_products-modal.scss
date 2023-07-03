@@ -1,0 +1,283 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.products-modal {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 100%;
+    max-width: 280px;
+    max-height: 95%;
+    padding: 28px 20px 32px 20px;
+    text-align: center;
+
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    background: var(--modal-bg-white);
+
+    transition: transform 500ms ease;
+    overflow: auto;
+}
+
+.products-modal__close-btn {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+}
+
+.products-modal__close-btn-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-black-text);
+}
+
+.products__btn:active .products-modal {
+    transform: translateX(-50%) scale(1);
+}
+
+.products-modal__close-btn:active .products-modal {
+    transform: translateX(-50%) scale(0);
+}
+
+.products-modal__title {
+    font-family: var(--primary-title-font);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 22px;
+}
+
+.products-modal__image-wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    width: 131px;
+}
+
+.products-modal__image {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 131px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.products-modal__image-bcg {
+    width: 131px;
+    height: 131px;
+    border: none;
+    border-radius: 50%;
+
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
+}
+
+.products-modal__product-info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 39px;
+
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-modal__product-info-item .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2px;
+    margin-bottom: 8px;
+    padding: 0;
+
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #9CBE8F;
+    border: 2px solid #9CBE8F;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.products-modal__product-info-item {
+    width: 53px;
+    height: 72px;
+    padding-bottom: 8px;
+
+    background-color: transparent;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+}
+
+.products-modal__product-info-item .bottom {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1;
+}
+
+.products-modal__ingredients {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+.products-modal__ingredients-title {
+    margin-bottom: 24px;
+
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.products-modal__ingredients-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products-modal__ingredients-table-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.76;
+
+    &:not(:last-child) {
+        margin-bottom: 11px;
+    }
+}
+
+.products-modal__form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products-modal__form-input {
+    width: 100%;
+    max-width: 240px;
+    padding: 11px 10px;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid var(--primary-bg-color);
+    border-radius: 10px;
+
+    outline: none;
+
+    &::placeholder {
+        line-height: 1.4;
+        color: var(--primary-black-text);
+    }
+    
+}
+
+.products-modal__form-phone {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.products-modal__form-textarea {
+    margin-bottom: 32px;
+    resize: none;
+}
+
+.products-modal__form-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 34px;
+
+    background: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+
+    font-weight: 600;
+    line-height: 1.21;
+
+    outline: none;
+
+    transition: background var(--transition-dur-and-func), color var(--transition-dur-and-func);
+
+    &:hover {
+        background: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        background: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .products-modal {
+    max-width: 568px;
+    padding: 32px 40px;
+    }
+
+    .products-modal__close-btn {
+        top: 20px;
+        right: 20px;
+    }
+
+    .products-modal__title {
+        margin-bottom: 31px;
+    }
+
+    .products-modal__product-info {
+        margin-bottom: 48px;
+        gap: 20px;
+    }
+
+    .products-modal__product-info-item .top {
+        font-size: 12px;
+        margin-bottom: 7px;
+
+        width: 53px;
+        height: 53px;
+    }
+
+    .products-modal__product-info-item {
+        width: 65px;
+        height: 90px;
+        padding-bottom: 14px;
+    }
+
+    .products-modal__product-info-item .bottom {
+        font-size: 12px;
+    }
+
+    .products-modal__form-input {
+        max-width: 368px;
+        padding: 11px 16px;
+    }
+}

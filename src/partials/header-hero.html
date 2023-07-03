@@ -1,0 +1,198 @@
+<header class="page-header">
+  <div class="container page-header__container">
+    <a class="logo cursor" href="./index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/logo-desktop.webp    1x,
+            ./images/desktop/logo-desktop@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="imgage/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/logo-desktop.png    1x,
+            ./images/desktop/logo-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/logo-mobile.webp    1x,
+            ./images/mobile/logo-mobile@2x.webp 2x
+          "
+          media="(max-width: 1199px)"
+          type="imgage/webp"
+        />
+        <source
+          srcset="
+            ./images/mobile/logo-mobile.png    1x,
+            ./images/mobile/logo-mobile@2x.png 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <img
+          class="logo__img"
+          src="./images/mobile/logo-mobile.png"
+          alt="ice-cream-logo"
+        />
+      </picture>
+    </a>
+    <nav class="site-nav">
+      <ul class="site-nav__list list">
+        <li class="site-nav__item">
+          <a class="site-nav__link link cursor" href="./index.html">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link cursor" href="#about">How it’s made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link cursor" href="#products"
+            >Our products</a
+          >
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link cursor" href="#cnts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn js-open-menu cursor">
+      <svg class="mobile-menu-btn__icon">
+        <use href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button type="button" class="page-header__modal-btn cursor" data-modal-open>
+      Buy Now
+      <svg
+        aria-label="more-sign"
+        class="page-header__modal-btn--icon"
+        width="12"
+        height="12"
+      >
+        <use href="./images/sprite.svg#icon-more-sign"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="hero-container container">
+    <div class="hero-container__thumb">
+      <h1 class="hero-title title">
+        ice cream made with <span class="hero-title__item">passion</span>
+      </h1>
+      <ul class="dicription-list list">
+        <li class="dicription-list__item">
+          <p class="dicription-list__item-number">16</p>
+          <p class="dicription-list__item-text">cafes</p>
+        </li>
+        <li class="dicription-list__item">
+          <p class="dicription-list__item-number">23</p>
+          <p class="dicription-list__item-text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <ul class="hero-nav-list list">
+      <li class="hero-nav-list__item">
+        <a class="hero-nav-list__link--btn link cursor" href="#products"
+          >Products</a
+        >
+      </li>
+      <li class="hero-nav-list__item">
+        <a class="hero-nav-list__link link cursor" href="#about"
+          >How it’s made?</a
+        >
+      </li>
+    </ul>
+    <p class="hero-subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et
+    </p>
+    <svg
+      class="hero-subtitle__icon"
+      aria-label="icon arrow"
+      width="40"
+      height="14"
+    >
+      <use href="./images/sprite.svg#icon-arrow"></use>
+    </svg>
+  </div>
+  <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu__container container">
+      <a class="logo cursor" href="./index.html">
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/logo-desktop.webp    1x,
+              ./images/desktop/logo-desktop@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="imgage/webp"
+          />
+          <source
+            srcset="
+              ./images/desktop/logo-desktop.png    1x,
+              ./images/desktop/logo-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/logo-mobile.webp    1x,
+              ./images/mobile/logo-mobile@2x.webp 2x
+            "
+            media="(max-width: 1199px)"
+            type="imgage/webp"
+          />
+          <source
+            srcset="
+              ./images/mobile/logo-mobile.png    1x,
+              ./images/mobile/logo-mobile@2x.png 2x
+            "
+            media="(max-width: 1199px)"
+          />
+          <img
+            class="logo__img"
+            src="./images/mobile/logo-mobile.png"
+            alt="ice-cream-logo"
+          />
+        </picture>
+      </a>
+      <button class="mobile-menu__close_btn js-close-menu cursor">
+        <svg class="mobile-menu__close-icon" width="32" height="32">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu__wrapper">
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link cursor" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link cursor" href="#about"
+              >How it’s made?</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link cursor" href="#products"
+              >Our products</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link cursor" href="#cnts">Contact</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="mobile-menu__modal-btn cursor"
+          data-modal-open-mobile
+        >
+          Buy Now
+          <svg aria-label="more-sign" width="12" height="12">
+            <use href="./images/sprite.svg#icon-more-sign"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

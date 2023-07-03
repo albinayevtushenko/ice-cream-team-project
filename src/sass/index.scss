@@ -1,0 +1,29 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/container';
+@import './base/section';
+
+@import './components/buttons';
+@import './components/backdrop';
+@import './components/mobile-menu';
+@import './components/modal-form';
+@import './components/_ice-cream-background';
+@import './components/social-list';
+@import './components/title';
+
+@import './layout/header-hero';
+@import './layout/buy-now-modal';
+@import './layout/products';
+@import './layout/products-modal';
+@import './layout/about';
+@import './layout/read-more-modal';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/our-locations-modal';
+@import './layout/franchise-modal';
+@import './layout/footer';

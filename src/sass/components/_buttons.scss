@@ -1,0 +1,264 @@
+// кнопки Products десктоп
+.button_products-desktop {
+    width: 134px;
+    height: 42px;
+    background-color: none;
+    text-align: center;
+    color: var(--primary-black-text);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    fill: var(--primary-black-text);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+
+    &:hover {
+        border-color: var(--btn-bg-hover);
+    }
+    &:focus {
+        border-color: var(--btn-bg-hover);
+        color: var(--primary-white-text) ;
+    }
+    &:disabled {
+        border-color: var(--contact-grey);
+    }
+}
+
+// кнопки Products планшетная и мобильная версия
+.button_products-mobile {
+    width: 62px;
+    height: 24px;
+    background-color: none;
+    text-align: center;
+    color: var(--primary-black-text);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    fill: var(--primary-black-text);
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    display: flex;
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        border-color: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        border-color: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+    }
+
+    &:disabled {
+        border-color: var(--contact-grey);
+    }
+}
+
+
+// Кнопки Read more десктопная,планшетная и мобильная версия
+.button_read-more {
+    width: 164px;
+    height: 42px;
+    background-color: var(--accent-color);
+    text-align: center;
+    color: var(--primary-black-text);
+    fill: var(--primary-black-text);
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        background-color: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        background-color: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+        fill: var(--primary-white-text);
+    }
+
+    &:disabled {
+        background-color: var(--contact-grey);
+    }
+}
+
+// Ссылка How it's made десктоп
+.link_him-desktop {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--accent-color);
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        color: var (--btn-bg-hover);
+    }
+    
+    &:focus {
+         color: var (--modal-bg-white);
+        }
+    &:disabled {
+         color: var (--contact-grey);
+        }
+}
+
+// Ссылка How it's made планшетная и мобильная версия
+.link_him-mobile {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--accent-color);
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        color: var (--btn-bg-hover);
+    }
+
+    &:focus {
+        color: var (--modal-bg-white);
+    }
+
+    &:disabled {
+        color: var (--contact-grey);
+    }
+}
+
+// Кнопка Our Locations десктоп, планшетная и мобильная версии
+.button_location {
+    width: 196px;
+    height: 42px;
+    background-color: var(--accent-color);
+    text-align: center;
+    color: var(--primary-black-text);
+    fill: var(--primary-black-text);
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        background-color: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        background-color: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+        fill: var(--primary-white-text);
+    }
+
+    &:disabled {
+        background-color: var(--contact-grey);
+    }
+}
+
+// кнопки Franchise  десктоп,планшетная и мобильная версии
+.button_franchise{
+    width: 196px;
+    height: 42px;
+    background: none;
+    text-align: center;
+    color: var(--primary-black-text);
+    fill: var(--primary-black-text);
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        border-color: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        border-color: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+        fill: var(--primary-white-text);
+    }
+
+    &:disabled {
+        border-color: var(--contact-grey);
+    }
+}
+
+// Кнопки Buy now десктопная,планшетная и мобильная версия
+.button_buy {
+    width: 152px;
+    height: 42px;
+    background-color: var(--accent-color);
+    text-align: center;
+    color: var(--primary-black-text);
+    fill: var(--primary-black-text);
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    display: flex;
+    transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+    &:hover {
+        background-color: var(--btn-bg-hover);
+    }
+
+    &:focus {
+        background-color: var(--btn-bg-hover);
+        color: var(--primary-white-text);
+        fill: var(--primary-white-text);
+    }
+
+    &:disabled {
+        background-color: var(--contact-grey);
+    }
+}

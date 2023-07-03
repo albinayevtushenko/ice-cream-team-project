@@ -1,0 +1,50 @@
+.ice-cream-background {
+    background-image: url(../images/desktop/ice-cream-test.jpg);
+    // background-attachment: fixed;
+    padding-bottom: 393px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 384px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 196px;
+    }
+}
+
+.image-slider {
+    position: absolute;
+    margin-top: -24px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: -164px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-top: -94px;
+    }
+}
+
+.cr__container {
+    padding-top: 80px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 128px;
+    }
+}
+
+.contacts__container {
+    margin-top: -345px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: -304px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-top: -96px;
+    }
+}

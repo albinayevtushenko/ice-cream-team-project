@@ -1,0 +1,112 @@
+<div class="modal-backdrop is-hidden" data-modal2>
+  <div class="products-modal">
+    <button type="button" class="products-modal__close-btn cursor" data-modal2-close>
+      <svg class="products-modal__close-btn-icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="products-modal__title">Chocolate icecream</h2>
+
+    <div class="products-modal__image-wrapper">
+      <div class="products-modal__image-bcg"></div>
+      <picture>
+        <source
+          srcset="
+            ./images/Products-modal_picture.webp    1x,
+            ./images/Products-modal_picture@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/Products-modal_picture.jpg    1x,
+            ./images/Products-modal_picture@2x.jpg 2x
+          "
+        />
+        <img
+          src="./images/Products-modal_picture.jpg"
+          alt="Ice-cream"
+          class="products-modal__image"
+        />
+      </picture>
+    </div>
+
+    <ul class="products-modal__product-info list">
+      <li class="products-modal__product-info-item">
+        <div class="top">320</div>
+        <div class="bottom">kcal</div>
+      </li>
+      <li class="products-modal__product-info-item">
+        <div class="top">4g</div>
+        <div class="bottom">Protein</div>
+      </li>
+      <li class="products-modal__product-info-item">
+        <div class="top">8,2g</div>
+        <div class="bottom">Fats</div>
+      </li>
+      <li class="products-modal__product-info-item">
+        <div class="top">40,4g</div>
+        <div class="bottom">Carbs</div>
+      </li>
+    </ul>
+
+    <div class="products-modal__ingredients">
+      <h3 class="products-modal__ingredients-title">Ingredients</h3>
+
+      <ul class="products-modal__ingredients-table">
+        <li class="products-modal__ingredients-table-item">
+          <span>Milk</span><span>100ml</span>
+        </li>
+        <li class="products-modal__ingredients-table-item">
+          <span>Belgian chocolate</span><span>20g</span>
+        </li>
+        <li class="products-modal__ingredients-table-item">
+          <span>Cream</span><span>150 ml</span>
+        </li>
+        <li class="products-modal__ingredients-table-item">
+          <span>Cocoa powder</span><span>30g</span>
+        </li>
+        <li class="products-modal__ingredients-table-item">
+          <span>Sugar</span><span>40g</span>
+        </li>
+        <li class="products-modal__ingredients-table-item">
+          <span>Vanilla sugar</span><span>10g</span>
+        </li>
+      </ul>
+    </div>
+
+    <form action="/contact" class="products-modal__form" name="contact-info">
+      <input
+        class="products-modal__form-input cursor"
+        type="text"
+        name="username"
+        id="username"
+        pattern="[a-zA-Zа-яА-ЯіІїЇ']+"
+        required
+        placeholder="Name"
+      />
+
+      <input
+        class="products-modal__form-input products-modal__form-phone cursor"
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="XXX-XXX-XX-XX"
+        required
+      />
+
+      <textarea
+        class="products-modal__form-input products-modal__form-textarea cursor"
+        name="comment"
+        id="comment"
+        rows="3"
+        placeholder="Comment"
+      ></textarea>
+
+      <button type="submit" class="products-modal__form-btn cursor">Submit</button>
+    </form>
+  </div>
+</div>
